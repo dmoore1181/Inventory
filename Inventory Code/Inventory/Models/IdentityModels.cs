@@ -21,7 +21,7 @@ namespace Inventory.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("InventoryDbEntities", throwIfV1Schema: false)
         {
         }
         
